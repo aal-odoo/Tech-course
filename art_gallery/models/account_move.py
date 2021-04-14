@@ -7,3 +7,4 @@ class AccountMove(models.Model):
     _inherit = 'account.move'
     
     art_work_id = fields.Many2one(comodel_name='art.work', string='Art Work')
+    payment_reference = fields.Char(string="Reference")
